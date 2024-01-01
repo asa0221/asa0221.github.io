@@ -10,28 +10,35 @@
   
   <url>
     <loc>http://asasorano.fun/categories/archives/</loc>
-    <lastmod>2023-12-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://asasorano.fun/</loc>
-    <lastmod>2023-12-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://asasorano.fun/categories/</loc>
-    <lastmod>2023-12-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://asasorano.fun/post/</loc>
-    <lastmod>2023-12-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://asasorano.fun/post/blog1/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -39,6 +46,13 @@
   <url>
     <loc>http://asasorano.fun/post/blog0/</loc>
     <lastmod>2023-12-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://asasorano.fun/post/blog2/</loc>
+    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
