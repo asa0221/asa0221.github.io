@@ -1,50 +1,50 @@
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://asasorano.fun/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>asa0221.github.io/about/</loc>
+    <loc>http://asasorano.fun/about/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>asa0221.github.io/categories/archives/</loc>
+    <loc>http://asasorano.fun/categories/archives/</loc>
     <lastmod>2023-12-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>asa0221.github.io/</loc>
+    <loc>http://asasorano.fun/</loc>
     <lastmod>2023-12-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>asa0221.github.io/categories/</loc>
+    <loc>http://asasorano.fun/categories/</loc>
     <lastmod>2023-12-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>asa0221.github.io/post/</loc>
+    <loc>http://asasorano.fun/post/</loc>
     <lastmod>2023-12-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>asa0221.github.io/post/blog0/</loc>
+    <loc>http://asasorano.fun/post/blog0/</loc>
     <lastmod>2023-12-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>asa0221.github.io/tags/</loc>
+    <loc>http://asasorano.fun/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

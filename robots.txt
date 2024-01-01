@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: asa0221.github.io/sitemap.xml
+Sitemap: http://asasorano.fun/sitemap.xml

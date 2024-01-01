@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Asa</title>
-    <link>asa0221.github.io/categories/</link>
+    <link>http://asasorano.fun/categories/</link>
     <description>Recent content in Categories on Asa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Asa</copyright>
     <lastBuildDate>Wed, 27 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="asa0221.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://asasorano.fun/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>archives</title>
-      <link>asa0221.github.io/categories/archives/</link>
+      <link>http://asasorano.fun/categories/archives/</link>
       <pubDate>Wed, 27 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>asa0221.github.io/categories/archives/</guid>
+      <guid>http://asasorano.fun/categories/archives/</guid>
       <description></description>
     </item>
   </channel>
