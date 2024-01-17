@@ -7,14 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Asa</copyright>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://asasorano.fun/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://asasorano.fun/post/cs229n/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://asasorano.fun/post/cs229n/</guid>
+      <description>Intro Meaning: signifier(symbol)↔signified(idea or thing) =denotational semantics WordNet A thesaurus containing lists of synonym sets and hypernyms(”is a” relationships) from nltk.corpus import wordnet as wn poses</description>
+    </item>
     <item>
       <title>We need romantic expression in our daily lives.</title>
       <link>http://asasorano.fun/post/blog1/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://asasorano.fun/post/blog1/</guid>
-      <description>A soft storm of poigant panic</description>
+      <description>I am a blackcat</description>
     </item>
     <item>
       <title>You were never afraid of the waters or the many eyes on the cypress tree trunks.</title>
@@ -28,7 +35,7 @@
       <link>http://asasorano.fun/post/blog2/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
       <guid>http://asasorano.fun/post/blog2/</guid>
-      <description>Try to find a position in community</description>
+      <description>find a position in community</description>
     </item>
   </channel>
 </rss>

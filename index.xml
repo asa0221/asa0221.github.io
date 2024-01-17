@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Asa</copyright>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jan 2024 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://asasorano.fun/index.xml" rel="self" type="application/rss+xml" />
     
@@ -31,13 +31,15 @@
 &lt;blockquote&gt;
 &lt;p&gt;不合时宜的死亡如同黑洞的坍缩, 与之相关的人无一幸免, 那一瞬的痛苦带来的伤害不断发酵, 不断重复. 随着麻木的你一同到来的是对于生活可能性的追求, 所有的本该发生的幸福在梦里不断上演, 直至内心归于沉寂.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;我将这个博客视作自己的二重人生, 一份当时所感所想的备份, 时间机器. 在这私密的地方, 我可以说所有我想说的, 不被任何东西所约束.
-我将自己在亲密关系里的定位为一个收听者, 当朋友们在因悲伤回忆起我时, 我希望我是足以让他们不带有疲惫感的与我交流的人.
-事实上, 这很像一个计程车司机.&lt;/p&gt;
+&lt;p&gt;我将这个博客视作自己的二重人生, 一份当时所感所想的备份, 时间机器. 在这私密的地方, 我可以说所有我想说的, 不被任何东西所约束.&lt;/p&gt;
+&lt;p&gt;我将自己在亲密关系里的定位为一个收听者, 当朋友们在因悲伤回忆起我时, 我希望我是足以让他们不带有疲惫感的与我交流的人.&lt;/p&gt;
+&lt;p&gt;事实上, 这很像一个计程车司机.&lt;/p&gt;
 &lt;p&gt;我将这个身份或者能力视作一种追求, 因为我的自信也因此而建立, 支撑我走过每一个孤独与安静的日与夜, 照亮我的生活, 让我对未来充满希冀. 因为这证明我是值得被很好的回忆的人.&lt;/p&gt;
 &lt;p&gt;那便足够了.&lt;/p&gt;
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Asa (QIAO Ke)&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;img src=&#34;http://tva1.sinaimg.cn/large/006gEUdsly1hlfp2gd6qjj30qo0qon4h.jpg#pic_center&#34; alt=&#34;selffie.jpg&#34;&gt;
+Asa (QIAO Ke)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Based in Beijing&lt;/li&gt;
 &lt;li&gt;Specialized in Information Management and Information System&lt;/li&gt;
@@ -57,13 +59,210 @@
     </item>
     
     <item>
+      <title>Introduction</title>
+      <link>http://asasorano.fun/post/cs229n/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://asasorano.fun/post/cs229n/</guid>
+      
+        <description>&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;
+&lt;p&gt;Meaning: signifier(symbol)↔signified(idea or thing) =denotational semantics&lt;/p&gt;
+&lt;h3 id=&#34;wordnet&#34;&gt;WordNet&lt;/h3&gt;
+&lt;p&gt;A thesaurus containing lists of synonym sets and hypernyms(”is a” relationships)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; nltk.corpus &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; wordnet &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; wn
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;poses &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; { &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;n&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;noun&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;v&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;verb&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;adj (s)&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;adj&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;r&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;adv&amp;#39;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; synset &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; wn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;synsets(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;good&amp;#34;&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;format(poses[synset&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pos()], 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;, &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join([l&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;name() &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; l &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; synset&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;lemmas()])))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;noun: good
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;noun: good, goodness
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;noun: good, goodness
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;noun: commodity, trade_good, good
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj: good
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): full, good
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj: good
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): estimable, good, honorable, respectable
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): beneficial, good
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): good
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): good, just, upright
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): adept, expert, good, practiced, proficient, skillful, skilful
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): good
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): dear, good, near
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): dependable, good, safe, secure
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): good, right, ripe
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): good, well
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): effective, good, in_effect, in_force
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): good
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): good, serious
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): good, sound
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): good, salutary
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): good, honest
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): good, undecomposed, unspoiled, unspoilt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adj (s): good
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adv: well, good
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;adv: thoroughly, soundly, good
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; nltk.corpus &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; wordnet &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; wn
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;panda &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; wn&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;synset(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;panda.n.01&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hyper &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;lambda&lt;/span&gt; s: s&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;hypernyms()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;list(panda&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;closure(hyper))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Synset(&amp;#39;procyonid.n.01&amp;#39;),
+ Synset(&amp;#39;carnivore.n.01&amp;#39;),
+ Synset(&amp;#39;placental.n.01&amp;#39;),
+ Synset(&amp;#39;mammal.n.01&amp;#39;),
+ Synset(&amp;#39;vertebrate.n.01&amp;#39;),
+ Synset(&amp;#39;chordate.n.01&amp;#39;),
+ Synset(&amp;#39;animal.n.01&amp;#39;),
+ Synset(&amp;#39;organism.n.01&amp;#39;),
+ Synset(&amp;#39;living_thing.n.01&amp;#39;),
+ Synset(&amp;#39;whole.n.02&amp;#39;),
+ Synset(&amp;#39;object.n.01&amp;#39;),
+ Synset(&amp;#39;physical_entity.n.01&amp;#39;),
+ Synset(&amp;#39;entity.n.01&amp;#39;)]
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;problems-of-wordnet&#34;&gt;Problems of WordNet&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;missing nuance e.g. “proficient” and “good” is a synonym, this is only correct in some contexts.&lt;/li&gt;
+&lt;li&gt;missing new meanings of words&lt;/li&gt;
+&lt;li&gt;subjective&lt;/li&gt;
+&lt;li&gt;require human labor to create and adapt&lt;/li&gt;
+&lt;li&gt;can’t computer accurate word similarity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;representing-words-as-discrete-symbols&#34;&gt;Representing words as discrete symbols&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;one-hot&lt;/li&gt;
+&lt;li&gt;these two vectors are orthogonal&lt;/li&gt;
+&lt;li&gt;no-similarity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;representing-words-by-their-context&#34;&gt;Representing words by their context&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Distributional semantics: &lt;strong&gt;A word’s meaning is given by the words that frequently appear close-by&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;word-vectorsword-embeddings&#34;&gt;Word vectors(word embeddings)&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://prod-files-secure.s3.us-west-2.amazonaws.com/edb26675-ea0b-439d-b7bd-2214cc9e7c5d/be5b2ad0-c362-40a9-a3c3-53ad2751ac61/%E6%88%AA%E5%B1%8F2024-01-14_10.10.16.png&#34; alt=&#34;截屏2024-01-14 10.10.16.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Idea:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We have a large corpus of text&lt;/li&gt;
+&lt;li&gt;Every word in a fixed vocabulary is represented by a vector&lt;/li&gt;
+&lt;li&gt;Go through each position &lt;em&gt;t&lt;/em&gt; in the text, which has a center word &lt;em&gt;c&lt;/em&gt; and context (“outside”) words &lt;em&gt;o&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Use the similarity of the word vectors for &lt;em&gt;c&lt;/em&gt; and &lt;em&gt;o&lt;/em&gt; to calculate the probability of &lt;em&gt;o&lt;/em&gt; given &lt;em&gt;c&lt;/em&gt; (or vice versa)&lt;/li&gt;
+&lt;li&gt;Keep adjusting the word vectors to maximize this probability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://prod-files-secure.s3.us-west-2.amazonaws.com/edb26675-ea0b-439d-b7bd-2214cc9e7c5d/ca4e1794-636a-4330-a706-3a1411ba8870/%E6%88%AA%E5%B1%8F2024-01-14_10.15.00.png&#34; alt=&#34;截屏2024-01-14 10.15.00.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;objective-function&#34;&gt;Objective function&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Minimizing objective function ⟺ Maximizing predictive accuracy&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+J(\theta) = -\frac{1}{T}\log L(\theta) = -\frac{1}{T} \sum_{t=1}^{T} \sum_{\substack{-m \leq j \leq m \ j \neq 0}} \log P(w_{t+j} | w_t; \theta)
+$$&lt;/p&gt;
+&lt;p&gt;So how to calculate the P?&lt;/p&gt;
+&lt;p&gt;We will &lt;em&gt;use two&lt;/em&gt; vectors per word &lt;em&gt;w&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;v_w when &lt;em&gt;w&lt;/em&gt; is a center word&lt;/li&gt;
+&lt;li&gt;u_w when &lt;em&gt;w&lt;/em&gt; is a context word&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then for a center word &lt;em&gt;c&lt;/em&gt; and a context word &lt;em&gt;o&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;$$
+P(o|c) = \frac{\exp(u_o^T v_c)}{\sum_{w \in V} \exp(u_w^T v_c)}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://prod-files-secure.s3.us-west-2.amazonaws.com/edb26675-ea0b-439d-b7bd-2214cc9e7c5d/2fad4fea-dd3e-4af4-aa27-e935a0fdd512/%E6%88%AA%E5%B1%8F2024-01-14_10.36.26.png&#34; alt=&#34;截屏2024-01-14 10.36.26.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why similarity could be seen as possibility?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Similarity combines both the magnitude and the orientation of the vectors.&lt;/li&gt;
+&lt;li&gt;A high dot product value implies a high degree of similarity or compatibility, suggesting that the context word is likely to appear near the target word.&lt;/li&gt;
+&lt;li&gt;Then softmax function is used to turn raw similarity scores (like the dot products) into probabilities.&lt;/li&gt;
+&lt;li&gt;Similarity between word vectors can be thought of as a proxy for the probability of co-occurrence.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://prod-files-secure.s3.us-west-2.amazonaws.com/edb26675-ea0b-439d-b7bd-2214cc9e7c5d/17428153-c0c2-4f56-82b8-c0dec2731273/%E6%88%AA%E5%B1%8F2024-01-14_10.44.34.png&#34; alt=&#34;截屏2024-01-14 10.44.34.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Actually, this is an example of the &lt;strong&gt;softmax function ℝ&lt;/strong&gt; &lt;strong&gt;→ (0,1)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\text{softmax}(x_i) = \frac{\exp(x_i)}{\sum_{j=1}^{n} \exp(x_j)} = p_i
+$$&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;softmax function&lt;/strong&gt; maps arbitrary values x_i to a probability distribution p_i&lt;/p&gt;
+&lt;p&gt;You may wanna ask: why dot product can compare the similarity of o and c?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Projection&lt;/strong&gt;: The dot product of two vectors is the magnitude of the projection of one vector onto another.&lt;/p&gt;
+&lt;p&gt;e.g. vector k is king; vector a is apple; vector q is queen&lt;/p&gt;
+&lt;p&gt;$\vec{k}\cdot \vec{a}=[2,3]⋅[5,−1]=(2×5)+(3×−1)=10−3=7$&lt;/p&gt;
+&lt;p&gt;$\vec{k}\cdot \vec{q}==[2,3]⋅[2,2.5]=(2×2)+(3×2.5)=4+7.5=11.5$&lt;/p&gt;
+&lt;h3 id=&#34;training-a-model-by-optimizing-parameters&#34;&gt;Training a model by optimizing parameters&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://prod-files-secure.s3.us-west-2.amazonaws.com/edb26675-ea0b-439d-b7bd-2214cc9e7c5d/e15319e1-c30e-4205-a60a-d1fe9d54c6d5/Untitled.png&#34; alt=&#34;Untitled&#34;&gt;&lt;/p&gt;
+&lt;p&gt;$\theta$  represents all model parameters, in one long vector&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://prod-files-secure.s3.us-west-2.amazonaws.com/edb26675-ea0b-439d-b7bd-2214cc9e7c5d/bb42d9a1-b5f2-4862-bf69-bfbd4a0adf95/Untitled.png&#34; alt=&#34;Untitled&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Remember: every word has two vectors&lt;/li&gt;
+&lt;li&gt;We optimize these parameters by walking down the gradient&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Take an example of calculating walking down the gradient of center words c. (also need to consider a context word o)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://prod-files-secure.s3.us-west-2.amazonaws.com/edb26675-ea0b-439d-b7bd-2214cc9e7c5d/1adb9dda-0195-4033-b270-8ab1a45a008a/%E6%88%AA%E5%B1%8F2024-01-14_15.43.09.png&#34; alt=&#34;截屏2024-01-14 15.43.09.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;here is a useful basic fact:$\frac{\partial \mathbf{x}^T a}{\partial \mathbf{x}} = \frac{\partial a^T \mathbf{x}}{\partial \mathbf{x}} = a$&lt;/p&gt;
+&lt;p&gt;chain rule! If &lt;em&gt;y&lt;/em&gt; = &lt;em&gt;f&lt;/em&gt;(&lt;em&gt;u&lt;/em&gt;) and &lt;em&gt;u&lt;/em&gt; = &lt;em&gt;g&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;), i.e., &lt;em&gt;y&lt;/em&gt; = &lt;em&gt;f&lt;/em&gt;(&lt;em&gt;g&lt;/em&gt;(x)), then:&lt;/p&gt;
+&lt;p&gt;$\frac{dy}{dx} = \frac{dy}{du} \frac{du}{dx} = \frac{df(u)}{du} \frac{dg(x)}{dx}$&lt;/p&gt;
+&lt;p&gt;Two model variants:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Skip-grams (SG)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Predict context (“outside”) words (position independent) given center word&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Continuous Bag of Words (CBOW)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Predict center word from (bag of) context words&lt;/p&gt;
+&lt;p&gt;This lecture so far: &lt;strong&gt;Skip-gram model&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Additional efficiency in training:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Negative sampling&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So far: Focus on &lt;strong&gt;naïve softmax&lt;/strong&gt; (simpler but more expensive training method)&lt;/p&gt;
+&lt;h3 id=&#34;optimization-gradient-descent&#34;&gt;Optimization: Gradient Descent&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We have a cost function $J(\theta)$we want to minimize&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gradient Descent&lt;/strong&gt; is an algorithm to minimize $J(\theta)$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Idea:&lt;/strong&gt; for current value of $\theta$, calculate gradient of $J(\theta)$ , then take small step in direction of negative gradient. Repeat.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://prod-files-secure.s3.us-west-2.amazonaws.com/edb26675-ea0b-439d-b7bd-2214cc9e7c5d/2e87b2cf-af9a-4e04-9035-6f1ce242c644/Untitled.png&#34; alt=&#34;Untitled&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;negative-sampling&#34;&gt;Negative sampling&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Technique used to reduce the computational complexity&lt;/li&gt;
+&lt;li&gt;In a typical language model, you predict the probability of a word given its context, which requires normalizing the output probabilities across the entire vocabulary using a softmax function. This normalization step can be very computationally expensive because it involves summing over all words in the vocabulary for each training example.&lt;/li&gt;
+&lt;li&gt;Negative sampling addresses this issue by simplifying the problem to a binary classification task for each context word. Instead of predicting the probability of the target word amongst the entire vocabulary (multiclass classification), the model predicts the probability that a word and a context are seen together (positive examples) versus the probability that they are not (negative examples).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;e.g.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;The quick brown fox jumps over the lazy dog.”&lt;/p&gt;
+&lt;p&gt;we choose &amp;ldquo;brown&amp;rdquo; as the target word, and we&amp;rsquo;re using a context window size of 1, then our context words are &amp;ldquo;quick&amp;rdquo; and &amp;ldquo;fox&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Positive Samples:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In our training data, we would have positive samples that are actual context-target pairs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(quick, brown)&lt;/li&gt;
+&lt;li&gt;(brown, fox)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Negative Sampling:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;we choose to generate 2 negative samples for each positive pair. Here&amp;rsquo;s how we might generate negative samples:&lt;/p&gt;
+&lt;p&gt;For the positive pair (quick, brown), negative samples could be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(quick, dog)&lt;/li&gt;
+&lt;li&gt;(quick, lazy)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the positive pair (brown, fox), negative samples could be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(fox, the)&lt;/li&gt;
+&lt;li&gt;(fox, jumps)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Training the Model:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;During training, the Word2Vec model will adjust its internal word representations to do two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Increase the probability that the true context words (&amp;ldquo;quick&amp;rdquo; and &amp;ldquo;fox&amp;rdquo;) are predicted given the target word &amp;ldquo;brown&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Decrease the probability that the randomly selected negative samples (&amp;ldquo;dog&amp;rdquo;, &amp;ldquo;lazy&amp;rdquo;, &amp;ldquo;the&amp;rdquo;, &amp;ldquo;jumps&amp;rdquo;) are predicted given the context word.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is typically done by using a logistic regression model that outputs a probability between 0 and 1. For positive samples, the model aims to output a probability close to 1, and for negative samples, it aims to output a probability close to 0.&lt;/p&gt;
+&lt;p&gt;By repeating this process across all the words in a large corpus, the model effectively learns word embeddings that capture semantic similarities and relationships between words, because words that appear in similar contexts will end up having similar word embeddings. Negative sampling makes this training process much more efficient, especially when dealing with large vocabularies.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>We need romantic expression in our daily lives.</title>
       <link>http://asasorano.fun/post/blog1/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>http://asasorano.fun/post/blog1/</guid>
       
-        <description>&lt;p&gt;Standing behind the closed window door of the runway, I gaze at the swiftly passing train and the fleeting shadow of humanity, I wonder: why I am a human? With an overwhelming disgusting surge in my stomach, I feel my soul imprisoned in the ugly physical form. I should and I could be more free. I find myself and comfort that: latter, latter, be patient, please.&lt;/p&gt;
+        <description>&lt;p&gt;Standing behind the closed window door of the subway, I gaze at the swiftly passing train and the fleeting shadow of people, I wonder: why I am a human? With an overwhelming disgusting surge in my stomach, I feel my soul imprisoned in the ugly physical form. I should and I could be more free. I find myself and comfort that: latter, latter, be patient, please.&lt;/p&gt;
 </description>
       
     </item>
